@@ -65,7 +65,7 @@ CFLAGS += -DLOG_SANDBOX_ALLOCATION
 # CFLAGS += -DLOG_UNSUPPORTED_WASI
 
 # Stores and logs extended signal information for each worker
-CFLAGS += -DLOG_SOFTWARE_INTERRUPT_COUNTS
+# CFLAGS += -DLOG_SOFTWARE_INTERRUPT_COUNTS
 
 # This adds an array of sandbox states to all sandbox structs and appends states at each transition
 # The history trucates when the number of elements equal SANDBOX_STATE_HISTORY_CAPACITY 
