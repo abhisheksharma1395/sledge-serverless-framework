@@ -410,7 +410,6 @@ scheduler_idle_loop()
 
 		/* Improve the performance of spin-wait loops (works only if preemptions enabled) */
 		if (runtime_worker_spinloop_pause_enabled) {
-		    debuglog("Inside scheduler idle loop, pause enabled");
 		    pause();
 		}
 	}

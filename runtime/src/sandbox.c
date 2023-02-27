@@ -37,6 +37,7 @@ sandbox_allocate_linear_memory(struct sandbox *sandbox)
 	assert(sandbox != NULL);
 	sandbox->memory = module_allocate_linear_memory(sandbox->module);
 	if (unlikely(sandbox->memory == NULL)) return -1;
+	debuglog("Trying to log mem details");
 	debuglog("Sandbox %lu: of %s %s\n", sandbox->id, sandbox->tenant->name, sandbox->route->route);
     debuglog("Sandbox initialized with memory %lu and capacity %lu\n", sandbox->memory->abi.size, sandbox->memory->abi.capacity);
 	return 0;
