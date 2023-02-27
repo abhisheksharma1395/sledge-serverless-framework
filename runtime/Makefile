@@ -51,7 +51,7 @@ BINARY_NAME=sledgert
 
 # Strips out calls to assert() and disables debuglog
 # CFLAGS += -DNDEBUG
-
+CFLAGS += -DDEBUG
 # Redirects debuglogs to /runtime/bin/sledge.log 
 CFLAGS += -DLOG_TO_FILE
 
